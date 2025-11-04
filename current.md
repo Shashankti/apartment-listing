@@ -143,20 +143,29 @@ function openLightbox() {
   lightbox.style.display = 'block';
   showImage(currentIndex);
 }
+
 function closeLightbox() { lightbox.style.display = 'none'; }
+
 function showImage(index) { lightboxImg.src = galleryImages[index].src; }
+
 function changeImage(step) {
   currentIndex = (currentIndex + step + galleryImages.length) % galleryImages.length;
   showImage(currentIndex);
 }
+
+// keyboard navigation
 document.addEventListener('keydown', e => {
   if (e.key === 'Escape') closeLightbox();
   if (e.key === 'ArrowLeft') changeImage(-1);
   if (e.key === 'ArrowRight') changeImage(1);
 });
+
+// tap outside image to close
 lightbox.addEventListener('click', e => {
   if (e.target === lightbox) closeLightbox();
 });
+
+// swipe navigation for touch
 let startX = 0;
 lightbox.addEventListener('touchstart', e => startX = e.changedTouches[0].screenX);
 lightbox.addEventListener('touchend', e => {
