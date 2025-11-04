@@ -17,13 +17,12 @@ Please note: the apartment is currently in use, so it may not appear fully clean
 ---
 
 <div class="current-gallery">
-  <figure><img src="images/current_1.png" alt="Current photo 1"><figcaption>View 1 – bedroom area</figcaption></figure>
   <figure><img src="images/current_2.png" alt="Current photo 2"><figcaption>View 2 – desk and storage</figcaption></figure>
-  <figure><img src="images/current_3.png" alt="Current photo 3"><figcaption>View 3 – wardrobe and shelves</figcaption></figure>
-  <figure><img src="images/current_4.png" alt="Current photo 4"><figcaption>View 4 – entrance area</figcaption></figure>
-  <figure><img src="images/current_5.png" alt="Current photo 5"><figcaption>View 5 – kitchenette</figcaption></figure>
-  <figure><img src="images/current_6.png" alt="Current photo 6"><figcaption>View 6 – dining/sideboard area</figcaption></figure>
-  <figure><img src="images/current_7.png" alt="Current photo 7"><figcaption>View 7 – bathroom</figcaption></figure>
+  <figure><img src="images/current_3.png" alt="Current photo 3"><figcaption>View 3 – wardrobe and miror</figcaption></figure>
+  <figure><img src="images/current_4.png" alt="Current photo 4"><figcaption>View 4 – Desk </figcaption></figure>
+  <figure><img src="images/current_5.png" alt="Current photo 5"><figcaption>View 5 – more storage</figcaption></figure>
+  <figure><img src="images/current_6.png" alt="Current photo 6"><figcaption>View 6 – bed</figcaption></figure>
+  <figure><img src="images/current_7.png" alt="Current photo 7"><figcaption>View 7 – bed</figcaption></figure>
   <figure><img src="images/current_8.png" alt="Current photo 8"><figcaption>View 8 – overall room layout</figcaption></figure>
 </div>
 

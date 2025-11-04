@@ -17,43 +17,28 @@ These are the stock images which show the furniture and layout of the apartment.
 
 <div class="gallery">
   <figure>
-    <img src="images/interior_1.png" alt="Living Area">
-    <figcaption><b>Living Area</b> – spacious and bright, includes bed, study desk, and wardrobe.</figcaption>
+    <img src="images/inerior1.png" alt="Living Area">
+    <figcaption><b>Living Area</b> – bed has easy access storage.</figcaption>
   </figure>
 
   <figure>
-    <img src="images/interior_2.png" alt="Work Desk">
+    <img src="images/interior2.png" alt="Work Desk">
     <figcaption><b>Work Desk</b> – includes chair, pull-out storage unit, and overhead shelves.</figcaption>
   </figure>
 
   <figure>
-    <img src="images/interior_3.png" alt="Kitchen Area">
-    <figcaption><b>Kitchenette</b> – equipped with sink, induction stove, and microwave oven.</figcaption>
+    <img src="images/interior3.png" alt="Kitchen Area">
+    <figcaption><b>Kitchenette</b> – microwave has an oven function too.</figcaption>
   </figure>
 
   <figure>
-    <img src="images/interior_4.png" alt="Bathroom">
-    <figcaption><b>Bathroom</b> – private ensuite with shower, mirror, and storage cabinet.</figcaption>
+    <img src="images/interior5.png" alt="Bathroom">
+    <figcaption><b>Bathroom</b> </figcaption>
   </figure>
 
   <figure>
-    <img src="images/interior_5.png" alt="Sideboard and mirror">
-    <figcaption><b>Sideboard & Mirror</b> – located near the entrance, useful for storage and daily essentials.</figcaption>
-  </figure>
-
-  <figure>
-    <img src="images/interior_6.png" alt="Dining area">
-    <figcaption><b>Dining Corner</b> – includes compact dining table with bar stool seating.</figcaption>
-  </figure>
-
-  <figure>
-    <img src="images/interior_7.png" alt="Wardrobe area">
-    <figcaption><b>Wardrobe Section</b> – built-in storage with shelves and hanging space.</figcaption>
-  </figure>
-
-  <figure>
-    <img src="images/interior_8.png" alt="Overall view">
-    <figcaption><b>Full Room View</b> – overall layout showing how all furniture fits in the space.</figcaption>
+    <img src="images/interior4.png" alt="Sideboard and mirror">
+    <figcaption><b>Overview</b> – there is an inbuilt wardrobe near the door</figcaption>
   </figure>
 </div>
 
