@@ -1,6 +1,6 @@
-remote_theme: pages-themes/cayman@v0.2.0
-plugins:
-  - jekyll-remote-theme
-
+# remote_theme: pages-themes/cayman@v0.2.0
+# plugins:
+#   - jekyll-remote-theme
 title: Apartment Jülicher Straße
 description: Information and images about apartments available for rent at Jülicher Straße, Aachen.
+theme: null

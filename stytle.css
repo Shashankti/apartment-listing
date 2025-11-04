@@ -1,0 +1,12 @@
+body {
+  font-family: "Segoe UI", sans-serif;
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  background: #fafafa;
+  color: #222;
+  line-height: 1.6;
+}
+h1, h2, h3 { color: #333; }
+a { color: #0055aa; text-decoration: none; }
+a:hover { text-decoration: underline; }
