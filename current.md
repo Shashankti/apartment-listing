@@ -17,13 +17,21 @@ Please note: the apartment is currently in use, so it may not appear fully clean
 ---
 
 <div class="current-gallery">
-  <figure><img src="images/current_2.png" alt="Current photo 2"><figcaption>View 2 – desk and storage</figcaption></figure>
-  <figure><img src="images/current_3.png" alt="Current photo 3"><figcaption>View 3 – wardrobe and miror</figcaption></figure>
-  <figure><img src="images/current_4.png" alt="Current photo 4"><figcaption>View 4 – Desk </figcaption></figure>
-  <figure><img src="images/current_5.png" alt="Current photo 5"><figcaption>View 5 – more storage</figcaption></figure>
-  <figure><img src="images/current_6.png" alt="Current photo 6"><figcaption>View 6 – bed</figcaption></figure>
-  <figure><img src="images/current_7.png" alt="Current photo 7"><figcaption>View 7 – bed</figcaption></figure>
-  <figure><img src="images/current_8.png" alt="Current photo 8"><figcaption>View 8 – overall room layout</figcaption></figure>
+  <figure><img src="images/current1.png" alt="Bed1"><figcaption>Bed</figcaption></figure>
+  <figure><img src="images/current2.png" alt="Desk"><figcaption>Desk</figcaption></figure>
+  <figure><img src="images/current3.jpg" alt="Wardrobe"><figcaption>Wardrobe </figcaption></figure>
+  <figure><img src="images/current4.png" alt="Mirror"><figcaption>Mirror and coat hanger</figcaption></figure>
+  <figure><img src="images/current5.png" alt="Storage1 "><figcaption>Shelf1</figcaption></figure>
+  <figure><img src="images/current6.png" alt="Storage2 "><figcaption>Shelf2</figcaption></figure>
+  <figure><img src="images/current9.png" alt="Storage3 "><figcaption>Shelf3</figcaption></figure>
+  <figure><img src="images/current8.png" alt="headrest "><figcaption>bed head</figcaption></figure>
+  <figure><img src="images/bathroom1.jpg" alt="shower "><figcaption>Shower</figcaption></figure>
+  <figure><img src="images/bathroom2.jpg" alt="bathroom "><figcaption>Bathroom</figcaption></figure>
+  <figure><img src="images/bathroom3.jpg" alt="bathroomnoch "><figcaption>Still Bathroom</figcaption></figure>
+  <figure><img src="images/bathroom4.jpg" alt="bathstore"><figcaption>bathroom storage</figcaption></figure>
+  <figure><img src="images/kitchen1.png" alt="kitcheup"><figcaption>kitchen up</figcaption></figure>
+  <figure><img src="images/kitchen2.png" alt="kitchedown"><figcaption>kitchen down</figcaption></figure>
+  <figure><img src="images/kitchen3.png" alt="kitcheside"><figcaption>kitchen side</figcaption></figure>
 </div>
 
 ---
