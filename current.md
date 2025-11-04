@@ -45,7 +45,6 @@ if (!ref || (!ref.includes("gallery.md") && !ref.includes("gallery.html"))) {
 
 These are *recent real photos* of the apartment.  
 Please note: the apartment is currently in use, so it may not appear fully clean and organized.
-
 ---
 
 <div class="lighbox-gallery">
