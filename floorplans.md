@@ -22,8 +22,7 @@ The ground floor of the building has a common area with a study room, community 
 
 
 <!-- Begin Image Carousel -->
-<div class="carousel">
-  <div class="slides">
+<div class="lightbox-gallery">
     <img src="images/ext1.png" alt="Common area 1">
     <img src="images/ext2.png" alt="Common area 2">
     <img src="images/ext3.png" alt="Common area 3">
@@ -32,84 +31,109 @@ The ground floor of the building has a common area with a study room, community 
     <img src="images/ext6.png" alt="Common area 6">
     <img src="images/ext7.png" alt="Common area 7">
     <img src="images/ext8.png" alt="Common area 8">
-  </div>
-
-  <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
-  <button class="next" onclick="moveSlide(1)">&#10095;</button>
 </div>
 
+
+---
+
 <style>
-.carousel {
-  position: relative;
-  max-width: 600px;
-  margin: 20px auto;
-  overflow: hidden;
-  border-radius: 10px;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+.lightbox-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 15px;
+  margin-top: 20px;
 }
-
-.carousel img {
+.lightbox-gallery img {
   width: 100%;
-  display: none;
-  border-radius: 10px;
-}
-
-.carousel img.active {
-  display: block;
-}
-
-.carousel .prev,
-.carousel .next {
+  border-radius: 8px;
   cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  padding: 12px;
-  margin-top: -22px;
+  transition: transform 0.2s;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+}
+.lightbox-gallery img:hover { transform: scale(1.03); }
+
+.lightbox {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0; top: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.9);
+}
+.lightbox-content {
+  display: block;
+  margin: auto;
+  max-width: 90%;
+  max-height: 85%;
+  border-radius: 8px;
+  box-shadow: 0 0 25px rgba(0,0,0,0.6);
+}
+.close, .prev, .next {
   color: white;
-  font-weight: bold;
-  font-size: 24px;
-  background-color: rgba(0,0,0,0.4);
-  border: none;
-  border-radius: 50%;
+  position: absolute;
+  font-size: 2rem;
+  cursor: pointer;
   user-select: none;
-  transition: 0.3s;
 }
+.close { top: 20px; right: 35px; }
+.prev, .next {
+  top: 50%; transform: translateY(-50%);
+  padding: 16px;
+  font-weight: bold;
+  background: rgba(0,0,0,0.4);
+  border-radius: 50%;
+}
+.prev:hover, .next:hover { background: rgba(0,0,0,0.7); }
+.prev { left: 20px; } .next { right: 20px; }
 
-.carousel .next {
-  right: 10px;
-}
-.carousel .prev {
-  left: 10px;
-}
-
-.carousel .prev:hover,
-.carousel .next:hover {
-  background-color: rgba(0,0,0,0.7);
+@media (max-width: 768px) {
+  .lightbox-content { max-width: 95%; max-height: 80%; }
+  .prev, .next { font-size: 1.5rem; padding: 12px; }
 }
 </style>
 
+<div id="lightbox" class="lightbox">
+  <span class="close" onclick="closeLightbox()">&times;</span>
+  <img id="lightbox-img" class="lightbox-content">
+  <a class="prev" onclick="changeImage(-1)">&#10094;</a>
+  <a class="next" onclick="changeImage(1)">&#10095;</a>
+</div>
+
 <script>
-let slideIndex = 0;
-const slides = document.querySelectorAll('.carousel img');
+let currentIndex = 0;
+const galleryImages = document.querySelectorAll('.lightbox-gallery img');
+const lightbox = document.getElementById('lightbox');
+const lightboxImg = document.getElementById('lightbox-img');
 
-function showSlide(index) {
-  slides.forEach((img, i) => {
-    img.classList.toggle('active', i === index);
-  });
+galleryImages.forEach((img, i) => {
+  img.addEventListener('click', () => { currentIndex = i; openLightbox(); });
+});
+
+function openLightbox() {
+  lightbox.style.display = 'block';
+  showImage(currentIndex);
 }
-
-function moveSlide(step) {
-  slideIndex = (slideIndex + step + slides.length) % slides.length;
-  showSlide(slideIndex);
+function closeLightbox() { lightbox.style.display = 'none'; }
+function showImage(index) { lightboxImg.src = galleryImages[index].src; }
+function changeImage(step) {
+  currentIndex = (currentIndex + step + galleryImages.length) % galleryImages.length;
+  showImage(currentIndex);
 }
-
-// Initialize carousel
-document.addEventListener('DOMContentLoaded', () => {
-  showSlide(slideIndex);
+document.addEventListener('keydown', e => {
+  if (e.key === 'Escape') closeLightbox();
+  if (e.key === 'ArrowLeft') changeImage(-1);
+  if (e.key === 'ArrowRight') changeImage(1);
+});
+lightbox.addEventListener('click', e => {
+  if (e.target === lightbox) closeLightbox();
+});
+let startX = 0;
+lightbox.addEventListener('touchstart', e => startX = e.changedTouches[0].screenX);
+lightbox.addEventListener('touchend', e => {
+  const diff = e.changedTouches[0].screenX - startX;
+  if (Math.abs(diff) > 50) diff > 0 ? changeImage(-1) : changeImage(1);
 });
 </script>
-<!-- End Image Carousel -->
 
 ---
 [⬅ Back to Home](index.md)
