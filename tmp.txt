@@ -1,0 +1,8 @@
+"docs/J\303\274licher Str. Bilderserie.pdf"
+"docs/J\303\274licher Str._Grundrisse_Apartments.pdf"
+images/floorplan.png
+images/inerior1.png
+images/interior2.png
+images/interior3.png
+images/interior4.png
+images/interior5.png
