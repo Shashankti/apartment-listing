@@ -1,14 +1,12 @@
+---
+layout: default
+title: Contact
+---
 <script>
 if (sessionStorage.getItem("authenticated") !== "true") {
   window.location.href = "login.html";
 }
 </script>
-
-
----
-layout: default
-title: Contact
----
 
 # 📍 Location & Contact
 
