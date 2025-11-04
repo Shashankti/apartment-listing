@@ -62,7 +62,7 @@ Please note: the apartment is currently in use, so it may not appear fully clean
   <img src="images/bathroom3.jpg" alt="Still Bathroom ">
   <img src="images/bathroom4.jpg" alt="bathroom storage">
   <img src="images/kitchen1.png" alt="Kitchen Upper Cabinets">
-  <img src="images/kitchen2.png" alt="Kitchen Lower Cabinets">">
+  <img src="images/kitchen2.png" alt="Kitchen Lower Cabinets">
   <img src="images/kitchen3.png" alt="Kitchen Side View">
 </div>
 ---
