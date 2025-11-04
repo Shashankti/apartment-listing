@@ -9,6 +9,15 @@ if (sessionStorage.getItem("authenticated") !== "true") {
 }
 </script>
 
+<!-- Restrict direct access unless coming from gallery -->
+<script>
+const ref = document.referrer;
+if (!ref || (!ref.includes("gallery.md") && !ref.includes("gallery.html"))) {
+  window.location.href = "gallery.html";
+}
+</script>
+
+
 # Current photos
 
 These are *recent real photos* of the apartment.  
