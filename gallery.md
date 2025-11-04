@@ -8,6 +8,29 @@ if (sessionStorage.getItem("authenticated") !== "true") {
   window.location.href = "login.html";
 }
 </script>
+<style>
+.site-header,
+.site-footer,
+.page-content {
+  max-width: 900px; /* optional to center content */
+  margin: auto;
+}
+
+.wrapper {
+  display: block !important;
+}
+
+.sidebar {
+  display: none !important;
+}
+
+.content {
+  width: 100% !important;
+  float: none !important;
+}
+</style>
+
+
 
 # Apartment Interiors
 

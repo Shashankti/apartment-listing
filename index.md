@@ -20,5 +20,5 @@ Here you can find all relevant details, floorplans, and interior images of the a
 3. [Contract and documents](documents.md)
  - Documentes needed for the rental contract(for long term stay)
 4. [Location etc.](contact.md)
- - Location of the apartmend and other miscellaneous information about the building i guess
+ - Location of the apartmend and other miscellaneous information about the building i guess.
 ---

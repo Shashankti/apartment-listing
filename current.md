@@ -9,6 +9,29 @@ if (sessionStorage.getItem("authenticated") !== "true") {
 }
 </script>
 
+<style>
+.site-header,
+.site-footer,
+.page-content {
+  max-width: 900px; /* optional to center content */
+  margin: auto;
+}
+
+.wrapper {
+  display: block !important;
+}
+
+.sidebar {
+  display: none !important;
+}
+
+.content {
+  width: 100% !important;
+  float: none !important;
+}
+</style>
+
+
 <!-- Restrict direct access unless coming from gallery -->
 <script>
 const ref = document.referrer;
@@ -25,22 +48,22 @@ Please note: the apartment is currently in use, so it may not appear fully clean
 
 ---
 
-<div class="current-gallery">
-  <figure><img src="images/current1.png" alt="Bed1"><figcaption>Bed</figcaption></figure>
-  <figure><img src="images/current2.png" alt="Desk"><figcaption>Desk</figcaption></figure>
-  <figure><img src="images/current3.jpg" alt="Wardrobe"><figcaption>Wardrobe </figcaption></figure>
-  <figure><img src="images/current4.png" alt="Mirror"><figcaption>Mirror and coat hanger</figcaption></figure>
-  <figure><img src="images/current5.png" alt="Storage1 "><figcaption>Shelf1</figcaption></figure>
-  <figure><img src="images/current6.png" alt="Storage2 "><figcaption>Shelf2</figcaption></figure>
-  <figure><img src="images/current9.png" alt="Storage3 "><figcaption>Shelf3</figcaption></figure>
-  <figure><img src="images/current8.png" alt="headrest "><figcaption>bed head</figcaption></figure>
-  <figure><img src="images/bathroom1.jpg" alt="shower "><figcaption>Shower</figcaption></figure>
-  <figure><img src="images/bathroom2.jpg" alt="bathroom "><figcaption>Bathroom</figcaption></figure>
-  <figure><img src="images/bathroom3.jpg" alt="bathroomnoch "><figcaption>Still Bathroom</figcaption></figure>
-  <figure><img src="images/bathroom4.jpg" alt="bathstore"><figcaption>bathroom storage</figcaption></figure>
-  <figure><img src="images/kitchen1.png" alt="kitcheup"><figcaption>kitchen up</figcaption></figure>
-  <figure><img src="images/kitchen2.png" alt="kitchedown"><figcaption>kitchen down</figcaption></figure>
-  <figure><img src="images/kitchen3.png" alt="kitcheside"><figcaption>kitchen side</figcaption></figure>
+<div class="lighbox-gallery">
+  <img src="images/current1.png" alt="Bed">
+  <img src="images/current2.png" alt="Desk">
+  <img src="images/current3.jpg" alt="Wardrobe"> 
+  <img src="images/current4.png" alt="Mirror and coat hanger">
+  <img src="images/current5.png" alt="Shelf1">
+  <img src="images/current6.png" alt="Shelf2">
+  <img src="images/current9.png" alt="Shelf3">
+  <img src="images/current8.png" alt="bed head">
+  <img src="images/bathroom1.jpg" alt="Shower">
+  <img src="images/bathroom2.jpg" alt="Bathroom">
+  <img src="images/bathroom3.jpg" alt="Still Bathroom ">
+  <img src="images/bathroom4.jpg" alt="bathroom storage">
+  <img src="images/kitchen1.png" alt="Kitchen Upper Cabinets">
+  <img src="images/kitchen2.png" alt="Kitchen Lower Cabinets">">
+  <img src="images/kitchen3.png" alt="Kitchen Side View">
 </div>
 ---
 
