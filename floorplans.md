@@ -3,13 +3,12 @@ layout: default
 title: Apartment Floorplans
 ---
 
-```{=html}
 <script>
 if (sessionStorage.getItem("authenticated") !== "true") {
   window.location.href = "login.html";
 }
 </script>
-```
+
 
 # Building exterior and floorplan
 
